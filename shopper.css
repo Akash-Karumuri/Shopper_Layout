@@ -1,0 +1,526 @@
+body{
+    width: 100%;
+    margin: 0%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+*{
+    box-sizing: border-box;
+}
+.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clearfix{
+    clear: both;
+    display: table;
+}
+header{
+    width: 100%;
+    height: 200px;
+    
+}
+.top{
+    width: 100%;
+    height: 50px;
+}
+.header1{
+    width: 50%;
+    height: 50px;
+    float: left;
+    background-color: rgb(230, 230, 230);
+}
+.header1 p{
+    float: left;
+    margin: 10px;
+    font-size: 15px;
+}
+.buttons{
+width: 50%;
+height: 50px;
+float: left;
+background-color:rgb(230, 230, 230);
+}
+.buttons button{
+    border: 0px;
+    background-color: transparent;
+    margin: 10px;
+}
+.buttons i{
+    margin: 10px;
+}
+.header2{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+.logo{
+    width: 30%;
+    height: 100px;
+    float: left;
+}
+.Home{
+    width: 40%;
+    height: 100px;
+    float: left;
+}
+.Home button{
+    margin: 10px;
+    background-color: transparent;
+    border: 0px;
+    font-size: 15px;
+}
+.search{
+    width: 30%;
+    height: 100px;
+    float: left;
+}
+.search i{
+    margin: 10px;
+    font-size: 15px;
+}
+.holiday{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+.main{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+.main div{
+    width: 33.33%;
+    height: 500px;
+    float: left;
+}
+#cover1{
+    background-image: url(pics/cover-1.jpg);
+    background-size: cover;
+    color: white;
+    font-size: 30px;
+    font-weight:900;
+    text-align: center;
+    padding-top: 160px;
+}
+#cover1 i,#cover2 i,#cover3 i{
+    margin-left: 5px;
+    font-weight: bolder;
+}
+#cover1 button{
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    font-size: 15px;
+    font-weight:500;
+    border: 0;
+    margin-top: 120px;
+}
+#cover2{
+    background-image: url(pics/cover-2.jpg);
+    background-size: cover;
+    color: white;
+    font-size: 30px;
+    font-weight:900;
+    text-align: center;
+    padding-top: 160px;
+}
+#cover2 button{
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    font-size: 15px;
+    font-weight:500;
+    border: 0;
+    margin-top: 120px;
+}
+
+#cover3{
+    background-image: url(pics/cover-3.jpg);
+    background-size: cover;
+    color: white;
+    font-size: 30px;
+    font-weight:900;
+    text-align: center;
+    padding-top: 160px;
+}
+#cover3 button{
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    font-size: 15px;
+    font-weight:500;
+    border: 0;
+    margin-top: 120px;
+}
+#cover1 button:hover,#cover2 button:hover,#cover3 button:hover{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: black;
+    color: white;
+}
+@media(max-width:500px){
+    .main #cover1, .main #cover2,.main #cover3{
+        width: 100%;
+    }
+    .main{
+        height: auto;
+        margin-bottom:auto;
+    }
+}
+.Shipping{
+    width: 100%;
+    height: 100px;
+    margin: 0px 5px 0px 5px;
+    border-bottom: 1px solid black;
+}
+.Shipping div{
+    width: 20%;
+    float: left;
+    padding: 5px;
+    margin: 0px 20px 0px 20px;
+}
+.Shipping i{
+    color: rgb(255, 47, 0);
+}
+.Shipping div h3{
+    text-align: center;
+}
+.Shipping div p{
+    text-align: center;
+    margin-left: 10px;
+}
+.new{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+}
+.new p{
+    text-align: center;
+}
+.collection{
+    width: 100%;
+    height: 500px;
+}
+.bags{
+    width: 40%;
+    height: 500px;
+    float: left;
+}
+.bags div{
+    width: 60%;
+    height: 80%;
+    background-color: black;
+    background-image: url(pics/product-1.jpg);
+    background-size: cover;
+    margin-left: 150px;
+}
+.bags div h2{
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+}
+.collection button,.collection2 button{
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    font-size: 15px;
+    font-weight:500;
+    border: 0;
+    margin-left: 100px;
+}
+.collection button:hover,.collection2 button:hover{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: black;
+    color: white;
+}
+.mens{
+    width: 60%;
+    height: 500px;
+    float: left;
+}
+.mens div{
+    width: 80%;
+    height: 80%;
+    background-image: url(pics/product-2.jpg);
+    background-size: cover;
+    margin-right: 190px;
+}
+.mens div h2{
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 70px;
+}
+.mens div p{
+    text-align: left;
+    font-weight: bolder;
+    margin-left: 70px;
+}
+.collection2{
+    width: 100%;
+    height: 500px;
+}
+.womens{
+    width: 60%;
+    height: 500px;
+    float: left;
+}
+.womens div{
+    width: 80%;
+    height: 80%;
+    background-image: url(pics/product-3.jpg);
+    background-size: cover;
+    background-color: aqua;
+   margin-left: 200px;
+}
+.womens div h2{
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 70px;
+}
+.womens div p{
+    text-align: left;
+    font-weight: bolder;
+    margin-left: 70px;
+}
+.sweatshirts{
+    width: 40%;
+    height: 500px;
+    float: left;
+}
+.sweatshirts div{
+    width: 60%;
+    height: 80%;
+    background-image: url(pics/product-4.jpg);
+    background-size: cover;
+    margin-right: 150px;
+}
+.sweatshirts div h2{
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+}
+.sweatshirts div p{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+.sellers{
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+.sellers button{
+    border:0;
+    background-color: transparent;
+    margin: 2px;
+    font-size: 15px;
+}
+#women{
+    text-decoration: underline;
+    color: rgb(255, 30, 0);
+}
+.sellers1{
+    width: 100%;
+    height: 600px;
+    padding-left: 150px;
+
+}
+.sellers1 div{
+    width: 20%;
+    height: 70%;
+    float: left;
+    margin: 15px;
+}
+.sellers1 img{
+    width: 100%;
+    height: 100%;
+ 
+}
+.sellers1 div p,h4{
+    text-align: left;
+    line-height:0.5;
+}
+@media (max-width:800px){
+    .sellers{
+        height: auto;
+    }
+    .sellers1{
+        width: 100%;
+        height: auto;
+    }
+    .sellers1 div{
+        width: 40%;
+        height: auto;
+    }
+    .sellers2{
+        width: 100%;
+        height: auto;
+    }
+    .sellers2 div{
+        width: 50%;
+        height: auto;
+    }
+
+}
+.more{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+.more p{
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: center;
+}
+.more div{
+    width: 100%;
+    height: 90%;
+    background-image: url("pics/cover-4.jpg");
+    background-size: 100% 100%;
+    font-size: 30px;
+}
+.more button{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.more button:hover{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: white;
+    color: black;
+}
+.time{
+padding-left: 200px;
+padding-top: 70px;
+}
+.reviews{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    line-height: 0.5;
+    padding: 20px;
+}
+.review .review1{
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-top: 50px;
+    margin-right: 25px;
+    border: 1px solid lightgray;
+}
+.review1 img{
+    width: 20%;
+    height: 20%;
+    margin: 20px 0px 0px 20px;
+    float: left;
+}
+.producttype,.productname{
+    text-align: left;
+    margin-left: 120px;
+    margin-top: 25px;
+    line-height: 0.5;
+}
+.star{
+    margin-right: 130px;
+    color: gold;
+}
+.Rcontent{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.Rcontent p{
+    line-height: 1.5;
+    padding: 20px;
+    margin: auto;
+}
+.brands{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(211, 211, 211, 0.97);
+    padding: 10px 0px 10px 80px;
+}
+
+.brand{
+    width: 15%;
+    height: 70%;
+    float: left;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+.brand img{
+    width: 100%;
+    height: 60%;
+}
+#brandname{
+    width: 100%;
+    height: 10%;
+    margin-top: 50px;
+}
+.brands p,h1{
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+footer input{
+    width: 250px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.264);
+    margin-right: 10px;
+    border: 0px;
+}
+footer button{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.264);
+    color: white;
+}
+.footer1{
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid lightgray;
+}
+.footer1 div{
+    width: 15%;
+    height: 80%;
+    float: left;
+    margin: 10px;
+    padding: 10px 0px 10px 30px;
+}
+.footer1 div h2,p{
+    text-align: left;
+}
+.footer1 div i{
+    margin: 5px;
+}
+.footer2{
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+}
+.footer2 p{
+    margin-right: 550px;
+}
+.footer2 img{
+    margin: 5px;
+}
+
